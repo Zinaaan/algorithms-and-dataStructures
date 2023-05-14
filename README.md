@@ -1,2 +1,2 @@
 # algorithms-and-dataStructures
-Typical algorithms and data stuctures with java
+Typical algorithms and data structures with java

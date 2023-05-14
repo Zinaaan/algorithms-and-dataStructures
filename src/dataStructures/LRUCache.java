@@ -14,12 +14,12 @@ public class LRUCache {
     //use linkedList to save the Node which contains key and value can remove the head node and tail node in O(1) times;
     //when hashMap combine with the linkedList, we can get and put the node on O(1) times;
     //the head node collect recently used, the tail node collect the least recently used;
-    com.practice.dataStructureDesign.DoubleLinkedList linkedList;
+    DoubleLinkedList linkedList;
     int capacity;
 
     public LRUCache(int capacity) {
         cacheMap = new HashMap<>();
-        linkedList = new com.practice.dataStructureDesign.DoubleLinkedList();
+        linkedList = new DoubleLinkedList();
         this.capacity = capacity;
     }
 
@@ -34,12 +34,12 @@ public class LRUCache {
     }
 
     public void put(int key, int val) {
-        com.practice.dataStructureDesign.Node curr = new com.practice.dataStructureDesign.Node(key, val);
+        Node curr = new Node(key, val);
         if (cacheMap.containsKey(key)) {
             linkedList.removeNode(cacheMap.get(key));
         } else {
             if (cacheMap.size() == capacity) {
-                com.practice.dataStructureDesign.Node lastNode = linkedList.removeLast();
+                Node lastNode = linkedList.removeLast();
                 cacheMap.remove(lastNode.key);
             }
         }
@@ -49,30 +49,30 @@ public class LRUCache {
 }
 
 class DoubleLinkedList {
-    com.practice.dataStructureDesign.Node head;
-    com.practice.dataStructureDesign.Node tail;
+    Node head;
+    Node tail;
 
     public DoubleLinkedList() {
-        head = new com.practice.dataStructureDesign.Node(0, 0);
-        tail = new com.practice.dataStructureDesign.Node(0, 0);
+        head = new Node(0, 0);
+        tail = new Node(0, 0);
         head.next = tail;
         tail.prev = head;
     }
 
-    public void addFirst(com.practice.dataStructureDesign.Node node) {
+    public void addFirst(Node node) {
         node.next = head.next;
         head.next.prev = node;
         head.next = node;
         node.prev = head;
     }
 
-    public com.practice.dataStructureDesign.Node removeNode(com.practice.dataStructureDesign.Node node) {
+    public Node removeNode(Node node) {
         node.next.prev = node.prev;
         node.prev.next = node.next;
         return node;
     }
 
-    public com.practice.dataStructureDesign.Node removeLast() {
+    public Node removeLast() {
         if (head.next == tail) {
             return head;
         }
@@ -83,8 +83,8 @@ class DoubleLinkedList {
 class Node {
     public int key;
     public int val;
-    public com.practice.dataStructureDesign.Node prev;
-    public com.practice.dataStructureDesign.Node next;
+    public Node prev;
+    public Node next;
 
     public Node(int key, int val) {
         this.key = key;

@@ -1,6 +1,6 @@
 package algorithms.KWayMerge;
 
-import com.practice.grokking.InplaceReversalOfLinkedList.LinkedListNode;
+import algorithms.InplaceReversalOfLinkedList.LinkedListNode;
 
 // Template for printing the linked list with forward arrows
 class PrintList {

@@ -64,7 +64,7 @@ public class MergeSort {
     }
 
     public static void main(String[] args) {
-        com.practice.dataStructureDesign.MergeSort mergeSort = new com.practice.dataStructureDesign.MergeSort();
+        MergeSort mergeSort = new MergeSort();
 //        int[] nums = new int[]{8, 6, 7, 2, 3, 5, 4, 1};
         int[] nums = new int[]{1, 2, 3, 4, -3, 2, 5};
         mergeSort.sortArray(nums);

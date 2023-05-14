@@ -1,7 +1,7 @@
 package algorithms.KWayMerge;
 
-import com.practice.grokking.InplaceReversalOfLinkedList.LinkedList;
-import com.practice.grokking.InplaceReversalOfLinkedList.LinkedListNode;
+import algorithms.InplaceReversalOfLinkedList.LinkedList;
+import algorithms.InplaceReversalOfLinkedList.LinkedListNode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,7 +19,7 @@ class MergeSortList {
         if (length == 0) {
             return null;
         }
-        if(length == 1){
+        if (length == 1) {
             return lists.get(0).head;
         }
         //step1

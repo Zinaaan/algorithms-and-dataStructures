@@ -3,7 +3,7 @@ package algorithms.FizzBuzz;
 /**
  * @author lzn
  * @date 2023/03/01 16:11
- * @Description
+ * @description
  */
 public class FizzBuzz_ThreadYield {
 

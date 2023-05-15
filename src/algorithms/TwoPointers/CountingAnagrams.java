@@ -7,7 +7,7 @@ import java.util.HashSet;
 /**
  * @author lzn
  * @date 2023/02/27 20:38
- * @Description O(n2)
+ * @description O(n2)
  */
 public class CountingAnagrams {
 

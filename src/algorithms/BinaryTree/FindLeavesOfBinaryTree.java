@@ -1,12 +1,14 @@
 package algorithms.BinaryTree;
 
+import common.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * @author lzn
  * @date 2023/03/07 14:44
- * @Description
+ * @description
  * Given a binary tree, collect a tree's nodes as if you were doing this: Collect and remove all leaves, repeat until the tree is empty.
  *
  * Example: Given binary tree

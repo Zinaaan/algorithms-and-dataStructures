@@ -1,9 +1,9 @@
-package dataStructures;
+package algorithms.Sort;
 
 /**
  * @author lzn
  * @date 2022/11/03 10:40
- * @Description 归并排序
+ * @description 归并排序
  */
 public class MergeSort {
     public int[] sortArray(int[] nums) {
@@ -18,7 +18,7 @@ public class MergeSort {
      * @param start: the left index of array
      * @param end:   the right index of array
      * @param temp:  the temporary array used to merge two ordered array to avoid multiple creation and destruction
-     * @Description mergeSort the array from start to end
+     * @description mergeSort the array from start to end
      * @date 2022/11/3 10:53
      */
     private void mergeSort(int[] nums, int start, int end, int[] temp) {
@@ -42,7 +42,7 @@ public class MergeSort {
      * @param mid:   the mid index of array
      * @param end:   the right index of array
      * @param temp:  the temporary array used to merge two ordered array to avoid multiple creation and destruction
-     * @Description merge two sorted array: copy the array to temp,compare the element in temp array and merge to the original array
+     * @description merge two sorted array: copy the array to temp,compare the element in temp array and merge to the original array
      * @date 2022/11/3 11:15
      */
     private void mergeOfTwoSortedArray(int[] nums, int start, int mid, int end, int[] temp) {

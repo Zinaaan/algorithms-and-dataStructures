@@ -6,7 +6,7 @@ import java.util.Deque;
 /**
  * @author lzn
  * @date 2023/03/15 11:58
- * @Description
+ * @description
  */
 public class RemoveAdjacentDuplicatesII {
 

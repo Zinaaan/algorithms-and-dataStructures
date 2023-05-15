@@ -73,8 +73,9 @@ public class BinaryTree {
     }
 
     private BinaryTreeNode findInBSTRec(BinaryTreeNode node, int nodeData) {
-        if (node == null)
+        if (node == null) {
             return null;
+        }
 
         if (node.data == nodeData) {
             return node;

@@ -3,7 +3,7 @@ package algorithms.UnionFind;
 /**
  * @author lzn
  * @date 2023/03/30 10:02
- * @Description
+ * @description
  */
 public class NumberOfIsland {
 

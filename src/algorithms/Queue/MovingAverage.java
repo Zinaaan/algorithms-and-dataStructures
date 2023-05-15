@@ -6,7 +6,7 @@ import java.util.Deque;
 /**
  * @author lzn
  * @date 2023/03/07 14:23
- * @Description
+ * @description
  * Given a stream of integers and a window size, calculate the moving average of all integers in the sliding window.
  *
  * Example:

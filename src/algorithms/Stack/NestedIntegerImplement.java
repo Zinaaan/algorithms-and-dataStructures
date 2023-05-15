@@ -19,8 +19,9 @@ public class NestedIntegerImplement {
 
     // @return true if this NestedDirectories holds a single file, rather than a nested list.
     public boolean isFile() {
-        if (this.file != 0)
+        if (this.file != 0) {
             return true;
+        }
         return false;
     }
 

@@ -1,4 +1,4 @@
-package dataStructures;
+package datastructures;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * @author lzn
  * @date 2023/04/16 09:51
- * @Description
+ * @description
  *
  * Question 1: Design a threadsafe read/write memory buffer made of contiguous memory (byte[]).
  * Follow ups: How would you make sure to avoid deadlock when using it in code?
@@ -53,8 +53,8 @@ public class CircularBuffer {
     }
 
     public byte[] read(int length) {
-        lock.lock();
         byte[] data = new byte[]{};
+        lock.lock();
         try {
 
             // Wait for buffer to have data available

@@ -8,7 +8,7 @@ public class Event {
     public Event(String content) {
         String[] strs = content.split(":");
         this.id = Integer.valueOf(strs[0]);
-        this.isStart = strs[1].equals("start");
+        this.isStart = "start".equals(strs[1]);
         this.time = Integer.valueOf(strs[2]);
     }
 

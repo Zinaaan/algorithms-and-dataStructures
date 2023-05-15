@@ -1,9 +1,9 @@
-package dataStructures;
+package datastructures;
 
 /**
  * @author lzn
  * @date 2022/10/24 18:09
- * @Description
+ * @description
  */
 public class MyCircularQueueLinkedList {
 
@@ -19,11 +19,13 @@ public class MyCircularQueueLinkedList {
 
     public boolean enQueue(int value) {
         //队列已满
-        if (isFull()) return false;
+        if(isFull()) {
+            return false;
+        }
         ListNode next = new ListNode(value);
-        if (front == null) {
+        if(front == null){
             front = rear = next;
-        } else {
+        }else{
             rear.next = next;
             rear = next;
         }
@@ -33,7 +35,9 @@ public class MyCircularQueueLinkedList {
 
     public boolean deQueue() {
         //队列为空
-        if (isEmpty()) return false;
+        if(isEmpty()) {
+            return false;
+        }
         ListNode dummy = new ListNode();
         dummy.next = front;
         dummy.next = dummy.next.next;

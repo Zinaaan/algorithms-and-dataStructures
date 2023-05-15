@@ -5,7 +5,7 @@ import java.util.concurrent.Semaphore;
 /**
  * @author lzn
  * @date 2023/03/01 17:23
- * @Description
+ * @description
  */
 public class FizzBuzz_Semaphore {
 

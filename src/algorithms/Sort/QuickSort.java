@@ -1,4 +1,4 @@
-package dataStructures;
+package algorithms.Sort;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -6,7 +6,7 @@ import java.util.Random;
 /**
  * @author lzn
  * @date 2022/11/03 10:40
- * @Description 快速排序
+ * @description 快速排序
  */
 public class QuickSort {
 

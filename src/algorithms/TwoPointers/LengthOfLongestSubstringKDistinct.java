@@ -5,7 +5,7 @@ import java.util.HashMap;
 /**
  * @author lzn
  * @date 2023/03/07 14:08
- * @Description
+ * @description
  * Given a string s, find the length of the longest substring T that contains at most k distinct characters.
  *
  * Example

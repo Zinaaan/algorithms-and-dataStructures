@@ -1,9 +1,9 @@
-package dataStructures;
+package datastructures;
 
 /**
  * @author lzn
  * @date 2022/10/24 18:09
- * @Description
+ * @description
  */
 public class ListNode {
     public int val;

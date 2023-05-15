@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * @author lzn
  * @date 2023/03/01 17:31
- * @Description
+ * @description
  */
 public class FizzBuzz_ReentrantLock {
 

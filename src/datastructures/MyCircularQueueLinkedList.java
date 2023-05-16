@@ -1,5 +1,7 @@
 package datastructures;
 
+import common.ListNode;
+
 /**
  * @author lzn
  * @date 2022/10/24 18:09

@@ -1,6 +1,6 @@
 package algorithms.Sort;
 
-import datastructures.ListNode;
+import common.ListNode;
 
 /**
  * @author Zinan

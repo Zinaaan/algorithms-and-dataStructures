@@ -20,9 +20,9 @@ public class ProcessBuilderRunCommand {
 
             // Determine the operating system and set the script path accordingly
             if (osName.contains("win")) {
-                scriptPath = Paths.get("src", "main", "resources", "run.bat").toString();
+                scriptPath = Paths.get("src", "main", "datastructures", "run.bat").toString();
             } else {
-                scriptPath = Paths.get("src", "main", "resources", "run.sh").toString();
+                scriptPath = Paths.get("src", "main", "datastructures", "run.sh").toString();
             }
 
             // Execute the script using ProcessBuilderRunCommand
